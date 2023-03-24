@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6674ca1767.js" crossorigin="anonymous"></script>
+    <title>Instagram feed</title>
+</head>
+<body>
+    <header>
+        <div class="row container-fluid">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <i class="fa-brands fa-instagram" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"></i>
+                    Instagram
+                  </a>
+    
+                <div class="justify-content-end">
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>Caption:</h5>
+                                    <p><textarea class="form-control" placeholder="Add the caption of your post here" id="floatingTextarea2" style="height: 80px"></textarea></p>
+                                    <button class="rounded"><i class="fa-solid fa-camera"></i></button>
+                                    <button class="rounded"><i class="fa-solid fa-location-dot"></i></button>     
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success">Publish</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                            
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-gear"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-lg-end">
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                                    <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                                  </ul>
+                            </div>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <content>
+      <ul class="nav justify-content-center">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square bs-body-color"></i></a>
+        </li>
+      </ul>
+      <div class="tab-content container-fluid" id="myTabContent"> 
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <div class="row">
+            <div class="col-4">
+              <div class="square-image-container">
+                <img src="/photos/BolsiASU.JPG" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="square-image-container">
+                <img src="photos/IMG_0007.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="square-image-container">
+                <img src="photos/IMG_0008.jpg" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+        </br>
+        <div class="row">
+          <div class="col-4">
+            <div class="square-image-container">
+              <img src="/photos/IMG_1983.JPG" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="square-image-container">
+              <img src="/photos/IMG_2164.JPG" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="square-image-container">
+              <img src="/photos/IMG_2552.JPG" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>        
+        </br>
+        <div class="row">
+          <div class="col-4">
+            <div class="square-image-container">
+              <img src="/photos/IMG_2638.PNG" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="square-image-container">
+              <img src="/photos/IMG_3226.JPG" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="square-image-container">
+              <img src="/photos/IMG_8409.JPG" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+        
+          </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="card m-auto" style="width: 40rem;">
+            <div class="card-header">
+                <div class="d-flex flex-row">
+                  <div class="col-11"><h4>Stadium day</h4></div>
+                  <div class="col-1 d-flex justify-content-end"><h6>13/11</h6></div>
+            </div>
+            <img src="/photos/IMG_1983.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><strong>Liked by etc people</strong></p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nesciunt aut maiores reiciendis voluptatem iure molestias neque eius dignissimos placeat, facere tempore, cumque itaque ullam laboriosam accusamus nam quas praesentium?</p>
+            </div>
+          </div>
+          <br>
+          <div class="card m-auto" style="width: 40rem;">
+            <div class="card-header">
+              <div class="d-flex flex-row">
+                <div class="col-11"><h4>Montevideo coast</h4></div>
+                <div class="col-1 d-flex justify-content-end"><h6>27/11</h6></div>
+            </div>
+            <img src="/photos/IMG_2164.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><strong>Liked by etc people</strong></p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nesciunt aut maiores reiciendis voluptatem iure molestias neque eius dignissimos placeat, facere tempore, cumque itaque ullam laboriosam accusamus nam quas praesentium?</p>
+            </div>
+          </div>
+          <br>
+          <div class="card m-auto" style="width: 40rem;">
+            <div class="card-header">
+              <div class="d-flex flex-row">
+                <div class="col-11"><h4>Restaurant</h4></div>
+                <div class="col-1 d-flex justify-content-end"><h6>27/8</h6></div>
+            </div>
+            <img src="/photos/BolsiASU.JPG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text"><strong>Liked by etc people</strong></p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nesciunt aut maiores reiciendis voluptatem iure molestias neque eius dignissimos placeat, facere tempore, cumque itaque ullam laboriosam accusamus nam quas praesentium?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </content>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
